@@ -5,8 +5,24 @@
   "main": "src/app.js",
   "author": "Robert Baryła",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./src/bin/www",
+    "lint": "esw src --color",
+    "lint:watch": "npm run lint -- --watch"
+  },
   "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
     "express": "^4.15.2",
+    "morgan": "~1.8.1",
+    "pug": "^2.0.0-beta.12",
+    "serve-favicon": "~2.4.2",
     "socketio": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-watch": "^3.1.0"
   }
 }
