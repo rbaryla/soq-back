@@ -6,7 +6,7 @@
   "author": "Robert Baryła",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/bin/www",
+    "start": "nodemon ./src/bin/www",
     "lint": "esw src --color",
     "lint:watch": "npm run lint -- --watch"
   },
